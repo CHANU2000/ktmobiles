@@ -1,0 +1,10 @@
+.inventory{
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #616161;
+
+    .inventoryContainer{
+        flex: 6;
+    }
+}

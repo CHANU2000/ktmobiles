@@ -1,0 +1,114 @@
+/* printview.css */
+
+.print-container {
+  width: 800px;
+  margin: 30px auto;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.shop-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.shop-logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.shop-details {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.shop-name {
+  font-size: 24px;
+  margin: 0;
+}
+
+.shop-address,
+.shop-contact {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+
+.print-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.print-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.print-subtext {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.print-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.print-table td {
+  padding: 10px 8px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.print-label {
+  font-weight: 600;
+  width: 200px;
+  color: #333;
+}
+
+.print-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.print-footer p {
+  margin: 10px 0;
+}
+
+.shop-signature {
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Print-only view */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .print-container,
+  .print-container * {
+    visibility: visible;
+  }
+
+  .print-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+}
